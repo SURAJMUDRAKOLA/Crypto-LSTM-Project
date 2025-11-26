@@ -80,25 +80,25 @@ This project is designed as a **production-style final year / portfolio project*
   - Technical indicators
   - Models + predictions
 
-The frontend never talks to the ML server directly — it always goes through Supabase Edge Functions, which:
-Validate and enrich requests
-Call the LSTM backend
-Store & fetch predictions from Supabase
+The frontend never talks to the ML server directly — it always goes through Supabase Edge Functions, which:  
+Validate and enrich requests  
+Call the LSTM backend  
+Store & fetch predictions from Supabase  
 
 ---
 
 ## 📊 What the App Shows
 
-Live market cards with price, 24h change, volume, high/low, etc.
-Interactive charts for each coin with:
- Price history
- Technical indicators overlay
- Prediction overlays
-Prediction panel with:
- Predicted price
- Confidence level (%)
- Model info (version, last trained, accuracy metrics)
- Reasoning summary text
+Live market cards with price, 24h change, volume, high/low, etc.  
+Interactive charts for each coin with:  
+ - Price history
+ - Technical indicators overlay
+ - Prediction overlays  
+Prediction panel with:  
+ - Predicted price
+ - Confidence level (%)
+ - Model info (version, last trained, accuracy metrics)
+ - Reasoning summary text
 
 ---
 
@@ -114,25 +114,25 @@ Once deployed, add screenshots here:
 ## 🔌 Core API Concepts
 
 LSTM Backend (FastAPI) – example endpoints:  
-GET  /            → Health check  
-POST /predict     → Run LSTM prediction for a symbol  
-POST /train/{symbol}  → Train / retrain model for a specific coin  
-GET  /models      → List trained models and their metrics  
+- GET  /            → Health check  
+- POST /predict     → Run LSTM prediction for a symbol  
+- POST /train/{symbol}  → Train / retrain model for a specific coin  
+- GET  /models      → List trained models and their metrics  
 
 The backend:  
-Loads / trains LSTM models  
-Computes technical features  
-Logs predictions + metrics into Supabase  
+- Loads / trains LSTM models  
+- Computes technical features  
+- Logs predictions + metrics into Supabase  
 
 ---
 
 ## 🧮 Model & Metrics
 
 The system tracks:
-RMSE – Root Mean Square Error
-MAE – Mean Absolute Error
-MAPE – Mean Absolute Percentage Error
-Directional Accuracy – % of times the model got the direction correct
+- RMSE – Root Mean Square Error
+- MAE – Mean Absolute Error
+- MAPE – Mean Absolute Percentage Error
+- Directional Accuracy – % of times the model got the direction correct
 These are surfaced in the UI so users can see how reliable the model is.
 
 ---
@@ -153,15 +153,15 @@ pip install -r requirements.txt
 uvicorn main:app --host 0.0.0.0 --port 8000
 
 </details> <details> <summary><strong>☁️ Deployment Concept (Vercel + Render + Supabase)</strong></summary>
-Frontend → Vercel (build with npm run build)
-Backend → Render (using the provided Dockerfile in /backend)
-Supabase Edge Function:
-Calls the backend URL (e.g. https://your-backend.onrender.com/predict)
-Uses Supabase secrets like:
-SUPABASE_URL
-SUPABASE_SERVICE_ROLE_KEY
-LSTM_BACKEND_URL
-This keeps the architecture modular, secure, and cloud-native.
+Frontend → Vercel (build with npm run build)  
+Backend → Render (using the provided Dockerfile in /backend)  
+Supabase Edge Function:  
+Calls the backend URL (e.g. https://your-backend.onrender.com/predict)  
+Uses Supabase secrets like:  
+SUPABASE_URL  
+SUPABASE_SERVICE_ROLE_KEY  
+LSTM_BACKEND_URL  
+This keeps the architecture modular, secure, and cloud-native.  
 </details>
 
 ---
