@@ -66,7 +66,7 @@ This project is designed as a **production-style final year / portfolio project*
 /backend      → FastAPI ML API (TensorFlow LSTM + metrics + model registry)
 /supabase     → Edge functions + SQL migrations + Supabase configuration
 
-🧠 High-Level Architecture
+## 🧠 High-Level Architecture
 [ React Frontend ]
        │
        ▼
@@ -88,7 +88,7 @@ Store & fetch predictions from Supabase
 
 ---
 
-📊 What the App Shows
+## 📊 What the App Shows
 
 Live market cards with price, 24h change, volume, high/low, etc.
 Interactive charts for each coin with:
@@ -103,7 +103,7 @@ Prediction panel with:
 
 ---
 
-🖼 UI / Screenshots (Placeholders)
+## 🖼 UI / Screenshots (Placeholders)
 
 Once deployed, add screenshots here:
 ![Dashboard Overview](readme-assets/dashboard-preview.png)
@@ -112,7 +112,7 @@ Once deployed, add screenshots here:
 
 ---
 
-🔌 Core API Concepts
+## 🔌 Core API Concepts
 
 LSTM Backend (FastAPI) – example endpoints:
 GET  /            → Health check
@@ -127,7 +127,7 @@ Logs predictions + metrics into Supabase
 
 ---
 
-🧮 Model & Metrics
+## 🧮 Model & Metrics
 
 The system tracks:
 RMSE – Root Mean Square Error
@@ -138,7 +138,7 @@ These are surfaced in the UI so users can see how reliable the model is.
 
 ---
 
-📦 Developer Notes
+## 📦 Developer Notes
 
 This section is mainly for developers who want to run or redeploy the system.
 
@@ -167,7 +167,7 @@ This keeps the architecture modular, secure, and cloud-native.
 
 ---
 
-🚀 Future Enhancements
+## 🚀 Future Enhancements
 
 📰 NLP Sentiment Analysis using Twitter / Reddit
 🧠 Ensemble models (LSTM vs GRU vs classic ML)
@@ -177,13 +177,13 @@ This keeps the architecture modular, secure, and cloud-native.
 
 ---
 
-📜 License
+## 📜 License
 
 This project is released under the MIT License.
 
 ---
 
-⭐ Support
+## ⭐ Support
 
 If you find this project useful, interesting, or helpful for learning:
 
