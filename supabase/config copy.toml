@@ -1,0 +1,13 @@
+project_id = "tflmntmxnuahlzobwwzh"
+
+[functions.lstm-predictions]
+verify_jwt = false
+
+[functions.fetch-market-data]
+verify_jwt = false
+
+[functions.calculate-technical-indicators]
+verify_jwt = false
+
+[functions.lstm-predictions-enhanced]
+verify_jwt = false
