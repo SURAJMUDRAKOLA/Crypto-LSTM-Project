@@ -168,11 +168,11 @@ This keeps the architecture modular, secure, and cloud-native.
 
 ## 🚀 Future Enhancements
 
-📰 NLP Sentiment Analysis using Twitter / Reddit
-🧠 Ensemble models (LSTM vs GRU vs classic ML)
-📈 Portfolio-level prediction & risk analytics
-🔔 Real-time alerts via WebSocket / push notifications
-🤖 Strategy backtesting and auto-trade signal generation
+-📰 NLP Sentiment Analysis using Twitter / Reddit
+-🧠 Ensemble models (LSTM vs GRU vs classic ML)
+-📈 Portfolio-level prediction & risk analytics
+-🔔 Real-time alerts via WebSocket / push notifications
+-🤖 Strategy backtesting and auto-trade signal generation
 
 ---
 
