@@ -2,7 +2,6 @@
 
 Your cryptocurrency forecasting project has been upgraded with a **real TensorFlow/Keras LSTM deep learning backend**. No more fake predictions - every forecast now comes from actual neural networks trained on historical data!
 
-## 📋 What Changed
 
 ✅ **Real Python Backend**: FastAPI server with TensorFlow/Keras LSTM models  
 ✅ **Actual Training**: Models train on 2 years of CoinGecko historical data  
