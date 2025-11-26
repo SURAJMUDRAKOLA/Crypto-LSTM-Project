@@ -23,7 +23,7 @@
 
 A full-stack, ML-driven platform that predicts cryptocurrency prices using **LSTM neural networks**, real historical market data, and advanced technical indicators — presented through a **modern trading-style UI** with live charts, confidence scores, and model performance metrics.
 
-This project is designed as a **production-style final year / portfolio project** showing:
+This project is designed as a **production-style final year project** showing:
 
 - Real ML backend (not fake random predictions)  
 - Proper data pipeline (market data → indicators → LSTM → metrics)  
