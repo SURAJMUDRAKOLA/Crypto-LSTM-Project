@@ -1,73 +1,129 @@
-# Welcome to your Lovable project
+🚀 Crypto LSTM Price Prediction Platform
+AI-Powered Deep Learning System for Real-Time Cryptocurrency Forecasting
 
-## Project info
+A full-stack ML-driven platform that predicts cryptocurrency prices using LSTM neural networks, real market data, technical indicators, and an interactive modern UI.
 
-**URL**: https://lovable.dev/projects/7849d2f3-e2b8-413d-acf6-2fbd6ef2cfa0
+🧠 About the Project
 
-## How can I edit this code?
+This application leverages deep learning (LSTM) and real-time market data to provide short-term cryptocurrency price forecasts along with performance accuracy metrics.
+The system includes:
 
-There are several ways of editing your application.
+A FastAPI ML backend running TensorFlow/Keras models
 
-**Use Lovable**
+A Supabase database for predictions & model logs
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7849d2f3-e2b8-413d-acf6-2fbd6ef2cfa0) and start prompting.
+A React + TypeScript + Vite frontend with advanced charting and animations
 
-Changes made via Lovable will be committed automatically to this repo.
+Supabase Edge Functions connecting UI to backend securely
 
-**Use your preferred IDE**
+✨ Key Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🔮 Real LSTM neural network price predictions
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+⚡ Fast inference with backend auto-training
 
-Follow these steps:
+📊 Live price charts with real technical indicators (SMA, EMA, RSI, Volatility)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+📈 Real evaluation metrics — RMSE / MAE / MAPE / Directional Accuracy
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+📁 Model persistence & weekly retraining automation
 
-# Step 3: Install the necessary dependencies.
-npm i
+🌓 Modern UI with Dark/Light mode
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+🌍 Real-time crypto market integrations
+
+🛡 Secure architecture using Supabase Edge Functions
+
+🛠 Tech Stack
+Category	Technologies
+Frontend	React, TypeScript, Vite, Tailwind CSS, shadcn-ui, Recharts
+Backend	FastAPI, Python, TensorFlow, Scikit-Learn, Uvicorn
+Database & Infra	Supabase, SQL, Edge Functions
+Deployment	Vercel (Frontend), Railway / Render (Backend)
+Others	Docker-ready, REST API, CI/CD support
+
+🧩 Project Structure
+/frontend         → React UI (Vite + TS + Tailwind + charts)
+/backend          → FastAPI (TensorFlow LSTM Backend)
+/supabase         → Edge functions + database migrations
+
+⚙️ Local Development Setup
+📍 Frontend
+git clone <YOUR_REPOSITORY_URL>
+cd <PROJECT_FOLDER>
+npm install
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+📍 Backend (Python LSTM API)
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --host 0.0.0.0 --port 8000
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+☁️ Deployment Guide
+🌐 Frontend Deployment (Vercel)
+    npm run build
+    vercel deploy
 
-**Use GitHub Codespaces**
+🤖 Backend Deployment (Railway / Render Recommended)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Deploy /backend via Docker auto-detect
+Add Environment Variables:
+SUPABASE_URL=<your_supabase_url>
+SUPABASE_SERVICE_ROLE_KEY=<your_service_role_key>
 
-## What technologies are used for this project?
 
-This project is built with:
+Copy deployed backend URL
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+🔗 Supabase Edge Function
 
-## How can I deploy this project?
+Add Secret:
 
-Simply open [Lovable](https://lovable.dev/projects/7849d2f3-e2b8-413d-acf6-2fbd6ef2cfa0) and click on Share -> Publish.
+LSTM_BACKEND_URL = https://your-backend-url
 
-## Can I connect a custom domain to my Lovable project?
+🔌 API Routes
+GET   /                 → Health check
+POST  /predict          → Generate LSTM prediction
+POST  /train/{symbol}   → Train model for coin
+GET   /models           → List trained models
 
-Yes, you can!
+🔍 Model Performance
+Metric	Description
+RMSE	Root Mean Square Error
+MAE	Mean Absolute Error
+MAPE	Accuracy percentage
+Direction Accuracy	Correct movement predictions %
+🖼 Screenshots & Preview
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+(Add screenshots here when deployed)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+/readme-assets/dashboard-preview.png
+/readme-assets/prediction-panel.png
+/readme-assets/live-charts.png
+
+🤝 Contributing
+
+Contributions are welcome!
+Open an issue or submit a PR for improvements.
+
+📜 License
+
+MIT License
+
+⭐ Support
+
+If this project helped you, please star ⭐ the repository — it motivates further development!
+
+💫 Future Enhancements
+
+NLP-based sentiment analysis (Twitter / Reddit)
+
+Multi-model ensemble comparison
+
+Portfolio prediction recommendations
+
+Live alert WebSocket system
+
+🚀 Ready to build, deploy & scale.
+Need help with backend deployment or Vercel setup?
+
+Just say “Help deploy backend” or “Help deploy frontend to Vercel”.
