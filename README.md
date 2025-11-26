@@ -113,16 +113,16 @@ Once deployed, add screenshots here:
 
 ## 🔌 Core API Concepts
 
-LSTM Backend (FastAPI) – example endpoints:
-GET  /            → Health check
-POST /predict     → Run LSTM prediction for a symbol
-POST /train/{symbol}  → Train / retrain model for a specific coin
-GET  /models      → List trained models and their metrics
+LSTM Backend (FastAPI) – example endpoints:  
+GET  /            → Health check  
+POST /predict     → Run LSTM prediction for a symbol  
+POST /train/{symbol}  → Train / retrain model for a specific coin  
+GET  /models      → List trained models and their metrics  
 
-The backend:
-Loads / trains LSTM models
-Computes technical features
-Logs predictions + metrics into Supabase
+The backend:  
+Loads / trains LSTM models  
+Computes technical features  
+Logs predictions + metrics into Supabase  
 
 ---
 
