@@ -61,7 +61,6 @@ This project is designed as a **production-style final year / portfolio project*
 
 ## 🧩 Project Structure
 
-```bash
 /frontend     → React UI (Vite + TS + Tailwind + Recharts + shadcn-ui)
 /backend      → FastAPI ML API (TensorFlow LSTM + metrics + model registry)
 /supabase     → Edge functions + SQL migrations + Supabase configuration
