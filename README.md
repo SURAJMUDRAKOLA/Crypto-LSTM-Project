@@ -66,16 +66,12 @@ This project is designed as a **production-style final year project** showing:
 /supabase     → Edge functions + SQL migrations + Supabase configuration  
 
 ## 🧠 High-Level Architecture
-[ React Frontend ]  
-       │  
-       ▼  
-[ Supabase Edge Function ]  ← securely calls ML backend  
-       │  
-       ▼  
-[ FastAPI LSTM Backend ]  ← TensorFlow/Keras, indicators, metrics  
-       │  
-       ▼  
-[ Supabase Postgres ]  
+<p align="center">
+  <b>React Frontend</b> <br>⬇️<br>
+  <b>Supabase Edge Function</b> <br>⬇️<br>
+  <b>FastAPI LSTM Backend (TensorFlow)</b> <br>⬇️<br>
+  <b>Supabase PostgreSQL Database</b>
+</p> 
   - OHLCV historical data
   - Technical indicators
   - Models + predictions
