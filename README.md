@@ -100,7 +100,6 @@ Prediction panel with:
 
 ## 🖼 UI / Screenshots (Placeholders)
 
-Once deployed, add screenshots here:
 ![Dashboard Overview](readme-assets/dashboard-preview.png)
 ![Prediction Panel](readme-assets/prediction-panel.png)
 ![Live Charts & Technical Indicators](readme-assets/live-charts.png)
